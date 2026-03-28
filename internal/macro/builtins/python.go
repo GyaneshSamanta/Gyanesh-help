@@ -1,0 +1,37 @@
+package builtins
+
+import "github.com/GyaneshSamanta/gyanesh-help/internal/macro"
+
+func registerPythonMacros() {
+	reg(&macro.Macro{
+		Name: "pip-freeze-clean", Category: "python",
+		Description: "Export clean requirements.txt from pip",
+		Commands:    []macro.Step{{OS: "all", Command: "pip freeze > requirements.txt"}},
+		Explanation: `
+✔ Done. requirements.txt created.
+─────────────────────────────────────────────────────
+All currently installed packages with pinned versions
+are saved. Share this file for reproducible installs:
+  pip install -r requirements.txt
+─────────────────────────────────────────────────────`,
+		BuiltIn: true,
+	})
+
+	reg(&macro.Macro{
+		Name: "venv-create", Category: "python",
+		Description: "Create and activate a Python virtual environment",
+		Commands: []macro.Step{
+			{OS: "linux", Command: "python3 -m venv .venv && source .venv/bin/activate"},
+			{OS: "darwin", Command: "python3 -m venv .venv && source .venv/bin/activate"},
+			{OS: "windows", Command: `python -m venv .venv && .venv\Scripts\activate`},
+		},
+		Explanation: `
+✔ Done. Virtual environment created and activated.
+─────────────────────────────────────────────────────
+A .venv directory was created. All pip installs now
+go into this isolated environment. Deactivate with:
+  deactivate
+─────────────────────────────────────────────────────`,
+		BuiltIn: true,
+	})
+}

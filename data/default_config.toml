@@ -1,0 +1,29 @@
+# Embedded default config — used by install scripts and first-run setup
+[core]
+lock_poll_interval_secs = 5
+lock_timeout_mins = 30
+adaptive_backoff = true
+notify_on_completion = true
+
+[network]
+probe_host = "1.1.1.1"
+probe_fallback_host = "8.8.8.8"
+probe_fallback_port = 53
+fail_threshold = 3
+recovery_threshold = 1
+probe_interval_secs = 10
+
+[history]
+max_entries = 50000
+default_display_count = 20
+
+[workspace]
+github_repo_name = "dev-workspace-backup"
+backup_shell_configs = true
+backup_vscode = false
+backup_history = false
+
+[ui]
+color = true
+progress_style = "bar"
+explain_after_macro = true

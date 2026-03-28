@@ -1,0 +1,19 @@
+# Build outputs
+dist/
+*.exe
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Go
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Config (user-specific)
+*.db
