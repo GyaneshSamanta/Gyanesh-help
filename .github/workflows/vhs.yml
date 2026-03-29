@@ -24,12 +24,23 @@ jobs:
 
       - name: Build gyanesh-help CLI
         run: |
-          go build -ldflags="-s -w" -o /usr/local/bin/gyanesh-help .
+          go build -ldflags="-s -w" -o gyanesh-help .
+          sudo mv gyanesh-help /usr/local/bin/
+
+      - name: Prepare assets directory
+        run: mkdir -p docs/assets
+
+      - name: Install System Dependencies
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg ttyd pipx
+
+      - name: Install VHS
+        run: go install github.com/charmbracelet/vhs@latest
 
       - name: Generate VHS GIFs
-        uses: charmbracelet/vhs-action@v2
-        with:
-          path: 'docs/vhs/*.tape'
+        run: |
+          export PATH=$PATH:$(go env GOPATH)/bin
+          vhs docs/vhs/onboarding.tape
+          vhs docs/vhs/store.tape
 
       - name: Commit and Push GIFs
         uses: stefanzweifel/git-auto-commit-action@v5
