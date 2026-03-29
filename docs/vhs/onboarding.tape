@@ -1,38 +1,40 @@
 Output docs/assets/onboarding_demo.gif
 Set FontSize 24
 Set Width 1000
-Set Height 800
+Set Height 900
 Set Padding 30
 Set Theme "TokyoNight"
+Set TypingSpeed 100ms
 
-# 1. Warm up
+# Start the recording
 Sleep 1s
-
-# 2. Launch
 Type "gyanesh-help onboarding"
 Enter
+
+# Wait for the welcome message
 Sleep 4s
 
-# 3. First prompt: "Press [Enter] or type 'y' to continue..."
-# We use Enter first.
-Enter
-Sleep 3s
-
-# 4. Second prompt: "Would you like to install a stack right now?"
-# Type "y" THEN hit Enter!
+# The prompt is: "Press [Enter] or type 'y' to continue... "
+# On Ubuntu, the application is likely dying or buffering. 
+# We explicitly type 'y' slowly.
 Type "y"
-Sleep 1s
+Sleep 2s
 Enter
-Sleep 5s
 
-# 5. TUI interaction
-Down
-Sleep 1s
-Down
-Sleep 1s
-Up
+# Wait for Step 1
+Sleep 4s
+
+# Prompt: "Would you like to install a stack right now? (You can say no) [y/N] "
+Type "y"
+Sleep 2s
+Enter
+
+# TUI Picker interaction
+Sleep 3s
+Down@2s 2
+Up@2s 1
 Sleep 1s
 Type "q"
 
-# 6. Final display
+# Final readout
 Sleep 10s
