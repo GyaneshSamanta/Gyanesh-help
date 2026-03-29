@@ -1,10 +1,11 @@
 Output docs/assets/store_demo.gif
-Set FontSize 20
-Set Width 1200
-Set Height 800
-Set Padding 20
-Set Theme "TokyoNight"
+Set FontSize 26
+Set Width 1000
+Set Height 650
+Set Padding 30
+Set Theme "Catppuccin Macchiato"
 
 Type "gyanesh-help store install mern"
 Enter
+
 Sleep 15s
