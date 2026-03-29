@@ -3,6 +3,10 @@
 <div align="center">
   <h3>Makes the terminal feel like it already knows what you need.</h3>
   <p>Queue management, semantic macros, environment stores, smart history, and Claude Code integrations — all offline, all local.</p>
+
+  [![GitHub release (latest by date)](https://img.shields.io/github/v/release/GyaneshSamanta/Gyanesh-help?style=flat-square)](https://github.com/GyaneshSamanta/Gyanesh-help/releases/latest)
+  [![GitHub all releases](https://img.shields.io/github/downloads/GyaneshSamanta/Gyanesh-help/total?style=flat-square)](https://github.com/GyaneshSamanta/Gyanesh-help/releases)
+  [![GitHub repo size](https://img.shields.io/github/repo-size/GyaneshSamanta/Gyanesh-help?style=flat-square)](https://github.com/GyaneshSamanta/Gyanesh-help)
 </div>
 
 ---
