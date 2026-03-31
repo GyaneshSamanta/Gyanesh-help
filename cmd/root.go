@@ -104,6 +104,22 @@ func init() {
 	rootCmd.AddCommand(workspaceCmd)
 	rootCmd.AddCommand(statusCmd)
 	rootCmd.AddCommand(privacyCmd)
+
+	// Register previously orphaned commands
+	rootCmd.AddCommand(auditCmd)
+	rootCmd.AddCommand(claudeCodeCmd)
+	rootCmd.AddCommand(completionCmd)
+	rootCmd.AddCommand(detectCmd)
+	rootCmd.AddCommand(initProjectCmd)
+	rootCmd.AddCommand(diffCmd)
+	rootCmd.AddCommand(pluginCmd)
+	rootCmd.AddCommand(profileCmd)
+	rootCmd.AddCommand(scheduleCmd)
+	rootCmd.AddCommand(shellHookCmd)
+	rootCmd.AddCommand(teamCmd)
+	rootCmd.AddCommand(updateCmd)
+	rootCmd.AddCommand(versionMgrCmd)
+	rootCmd.AddCommand(doctorCmd)
 }
 
 // Execute runs the root command.
