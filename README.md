@@ -10,8 +10,11 @@
     <a href="https://github.com/GyaneshSamanta/cue/releases/latest">
       <img src="https://img.shields.io/github/v/release/GyaneshSamanta/cue?style=for-the-badge&color=00e5ff&labelColor=1e1e2e" alt="Latest Release" />
     </a>
-    <a href="https://github.com/GyaneshSamanta/cue/releases">
-      <img src="https://img.shields.io/github/downloads/GyaneshSamanta/cue/total?style=for-the-badge&color=bc00ff&labelColor=1e1e2e" alt="Total Downloads" />
+    <a href="https://www.linkedin.com/newsletters/gyanesh-on-product-6979386586404651008/">
+      <img src="https://img.shields.io/badge/Newsletter-Subscribe-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Newsletter" />
+    </a>
+    <a href="https://buymeachai.ezee.li/GyaneshOnProduct">
+      <img src="https://img.shields.io/badge/Support_Project-Buy_Me_A_Chai-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Chai" />
     </a>
     <a href="https://github.com/GyaneshSamanta/cue">
       <img src="https://img.shields.io/github/repo-size/GyaneshSamanta/cue?style=for-the-badge&color=ff00ea&labelColor=1e1e2e" alt="Repo Size" />
